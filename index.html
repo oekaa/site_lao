@@ -1,42 +1,84 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Droit du Travail Malgache</title>
-  <link rel="stylesheet" href="styles/styles.css">
-</head>
-<body>
-  <header>
-    <nav>
-      <h1>Droit du Travail Malgache</h1>
-      <ul>
-        <li><a href="#">Accueil</a></li>
-        <li><a href="#">Notions</a></li>
-        <li><a href="#">Contrat</a></li>
-        <li><a href="#">Conditions</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
-    <div class="hero">
-      <h2>Comprendre et appliquer le droit du travail à Madagascar</h2>
-      <p>Un projet académique pour vulgariser les droits et devoirs du monde professionnel malgache.</p>
-      <a href="#intro" class="cta">Commencer</a>
-    </div>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notions - Droit du Travail</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
+  <body>
+    <header class="sticky">
+      <nav>
+        <h1>Droit du Travail</h1>
+        <ul>
+          <li><a href="/">Accueil</a></li>
+          <li><a href="/notions" class="active">Notions</a></li>
+          <li><a href="/contrat">Contrat</a></li>
+          <li><a href="/conditions">Conditions</a></li>
+        </ul>
+      </nav>
+    </header>
 
-  <section id="intro" class="intro-section">
-    <div class="container">
-      <h3>Présentation du projet</h3>
-      <p>
-        Ce site est dédié à l’étude et à la vulgarisation du droit du travail à Madagascar. 
-        Il présente les notions de base, les types de contrats, les conditions de travail et la protection des travailleurs.
-      </p>
+    <div class="hero small">
+      <div class="container">
+        <h2>Notions de base du droit du travail</h2>
+        <p>
+          Explore les fondations du droit du travail malgache : définition,
+          origines, sources et principes clés.
+        </p>
+      </div>
     </div>
-  </section>
 
-  <footer>
-    <p>© 2025 | Projet ISPM - Tous droits réservés</p>
-  </footer>
-</body>
+    <section class="content-section">
+      <div class="container">
+        <details open>
+          <summary><i data-lucide="help-circle"></i> Définition</summary>
+          <p>
+            Ensemble de règles juridiques qui régissent les relations entre
+            employeurs et salariés.
+          </p>
+        </details>
+
+        <details>
+          <summary><i data-lucide="clock-3"></i> Origines historiques</summary>
+          <p>
+            Avant la colonisation : travail coutumier. Puis droit colonial,
+            évolué après l’indépendance jusqu’à la réforme de 2024.
+          </p>
+        </details>
+
+        <details>
+          <summary><i data-lucide="file-text"></i> Sources du droit</summary>
+          <ul>
+            <li>Constitution</li>
+            <li>Code du travail</li>
+            <li>Décrets, arrêtés</li>
+            <li>Conventions collectives et internationales</li>
+            <li>Contrats</li>
+            <li>Jurisprudence</li>
+          </ul>
+        </details>
+
+        <details>
+          <summary><i data-lucide="shield-check"></i> Caractéristiques</summary>
+          <ul>
+            <li>Droit protecteur</li>
+            <li>Influences françaises et OIT</li>
+            <li>Dialogue social reconnu</li>
+            <li>Coexistence du secteur informel</li>
+            <li>Protection des mineurs</li>
+          </ul>
+        </details>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2025 | Projet ISPM - Tous droits réservés</p>
+    </footer>
+
+    <script>
+      lucide.createIcons();
+    </script>
+  </body>
 </html>
