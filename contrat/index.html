@@ -3,25 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contrat de Travail - Droit du Travail</title>
+    <title>Conditions de Travail</title>
     <link rel="stylesheet" href="../styles/styles.css" />
+    <script src="https://unpkg.com/lucide@latest"></script>
   </head>
   <body>
-    <header>
+    <header class="sticky">
       <nav>
-        <h1>Droit du Travail Malgache</h1>
+        <h1>Droit du Travail</h1>
         <ul>
           <li><a href="/">Accueil</a></li>
           <li><a href="/notions">Notions</a></li>
-          <li><a href="/contrat">Contrat</a></li>
+          <li><a href="/contrat"  class="active">Contrat</a></li>
           <li><a href="/conditions">Conditions</a></li>
         </ul>
       </nav>
-      <div class="hero small">
-        <h2>Le Contrat de Travail</h2>
-      </div>
     </header>
 
+    <div class="hero small">
+      <div class="container">
+        <h2>Conditions de travail & Protection</h2>
+        <p>
+          Durée du travail, sécurité, hygiène, congés, salaires, protection des
+          personnes vulnérables : tout y est !
+        </p>
+      </div>
+    </div>
     <section class="content-section">
       <div class="container">
         <h3>1. Éléments essentiels</h3>
@@ -90,5 +97,9 @@
     <footer>
       <p>© 2025 | Projet ISPM - Tous droits réservés</p>
     </footer>
+
+    <script>
+      lucide.createIcons();
+    </script>
   </body>
 </html>
