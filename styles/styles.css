@@ -47,6 +47,43 @@ nav ul li a.active {
   border-bottom: 2px solid #fff;
 }
 
+/* BURGER MENU */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Mobile navbar layout */
+@media (max-width: 768px) {
+  nav {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: #b92b27;
+    padding: 1rem 0;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .nav-links li {
+    text-align: center;
+    margin: 0.5rem 0;
+  }
+}
+
 /* HERO */
 .hero {
   text-align: center;
@@ -133,12 +170,60 @@ p {
 }
 
 /* FOOTER */
-footer {
-  background-color: #333;
+.site-footer {
+  background-color: #b92b27;
   color: white;
+  padding: 2rem 1rem;
+}
+.footer-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+  max-width: 960px;
+  margin: 0 auto;
+}
+.footer-brand,
+.footer-links {
+  flex: 1 1 250px;
+}
+.footer-brand h4 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+.footer-links h5 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+.footer-links ul {
+  list-style: none;
+  padding-left: 0;
+}
+.footer-links ul li {
+  margin-bottom: 0.5rem;
+}
+.footer-links ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.footer-links ul li a:hover {
+  color: #ffe5e0;
+}
+.footer-copy {
+  width: 100%;
   text-align: center;
-  padding: 1rem;
+  margin-top: 1rem;
   font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-grid {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 }
 
 /* SECTION DEUX COLONNES */
