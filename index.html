@@ -75,8 +75,11 @@
     <section class="pdf-section">
       <div class="container">
         <h3><i data-lucide="file-text"></i> Visualisation du Support PDF</h3>
+
+        <!-- Affichage PDF (PC uniquement) -->
         <iframe
-          src="pdf/PROJET DTJA1A_ISPM.pdf#toolbar=0&navpanes=0&scrollbar=0"
+          id="pdfViewer"
+          src="pdf/PROJET%20DTJA1A_ISPM.pdf#toolbar=0&navpanes=0&scrollbar=0"
           width="100%"
           height="700px"
           style="
@@ -84,10 +87,36 @@
             border-radius: 12px;
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
           "
+        ></iframe>
+
+        <!-- Lien alternatif pour les mobiles -->
+        <p
+          id="mobileLink"
+          style="text-align: center; display: none; margin-top: 1rem"
         >
-        </iframe>
+          📄 Le support PDF n'est pas disponible en aperçu sur mobile.<br />
+          <a
+            href="pdf/PROJET%20DTJA1A_ISPM.pdf"
+            target="_blank"
+            style="
+              color: #b92b27;
+              font-weight: bold;
+              text-decoration: underline;
+            "
+          >
+            Ouvrir le document dans un nouvel onglet
+          </a>
+        </p>
       </div>
     </section>
+
+    <script>
+      // Détection mobile simple
+      if (/android|iphone|ipad|mobile/i.test(navigator.userAgent)) {
+        document.getElementById("pdfViewer").style.display = "none";
+        document.getElementById("mobileLink").style.display = "block";
+      }
+    </script>
 
     <footer>
       <p>© 2025 | Projet ISPM - Tous droits réservés</p>
